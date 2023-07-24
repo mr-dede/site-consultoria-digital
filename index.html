@@ -10,18 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
-<body class="main-bg">
+<body>
+  <input id = "close-menu" class ="close-menu" type="checkbox" aria-label ="Close menu" role ="button">
+  <label class = "close-menu-label" for="close-menu" title = "close menu"></label>
     <div class="menu">
         <section class="main-content menu-content">
           <script src="assets/js/script.js"></script>
-            <h1>
-                <a href="#">LOGO</a>
+            <h1 onclick = "getElementById('close-menu').checked = false;">
+                <a href="#inicio">LOGO</a>
             </h1>
             <nav>
-                <ul>
+                <ul onclick = "getElementById('close-menu').checked = false;">
                     <li> <a href="#inicio">início</a></li>
                     <li> <a href="#servicos">serviços</a></li>
-                    <li> <a href="#portifolio">portfólio</a></li>
+                    <li> <a href="#portifolio">portfólio</a></li> 
                     <li> <a href="#planos">planos</a></li>
                     <li> <a href="#contacto">contacto</a></li>
                 </ul>
@@ -72,7 +74,7 @@
         <div class="inicio-container">
           <div class="row">
             <div class="col-md-12">
-              <h2>Em um mundo digital, sua presença online define seu sucesso. Conectamos sua marca com o público, ampliamos seu alcance, garantimos que você seja encontrado nos motores de busca, encantamos com histórias e monitoramos o progresso. Esses serviços são vitais para prosperar no ambiente digital.</h2>
+              <h2>Seu sucesso em um clique: Conquistamos o digital para você!</h2>
             </div>
           </div>
         </div>
